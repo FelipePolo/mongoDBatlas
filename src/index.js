@@ -1,12 +1,16 @@
 const express = require('express')
+const mongodb = require('mongodb').MongoClient
+require('dotenv').config()
 const app = express()
 
-app.get("/",(req,res) => {
-  res.status(200).send({
-    msg:"todo salio correcto "
-  })
-})
 
+app.get("/",(req,res) => {
+  try {
+    
+  } catch (error) {
+    res.send(error)
+  }
+})
 
 
 app.listen(4000,() => {
